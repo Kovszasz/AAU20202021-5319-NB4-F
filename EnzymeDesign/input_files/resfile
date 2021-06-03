@@ -1,0 +1,35 @@
+NATRO # default command that applies to everything without a non- default setting; do not repack
+# Resfile is based on rSASA of residues: 10 A from the docked BHET monomer and relative rSASA bigger than 5% and not in 4A range with the catalytic residues
+start
+
+78 A ALLAAxc
+43 A ALLAAxc
+183 A ALLAAxc
+50 A ALLAAxc
+45 A ALLAAxc
+81 A ALLAAxc
+88 A ALLAAxc
+154 A ALLAAxc
+85 A ALLAAxc
+86 A ALLAAxc
+182 A ALLAAxc
+80 A ALLAAxc
+82 A ALLAAxc
+151 A ALLAAxc
+171 A ALLAAxc
+83 A ALLAAxc
+18 A ALLAAxc
+181 A ALLAAxc
+152 A ALLAAxc
+180 A ALLAAxc
+84 A ALLAAxc
+44 A ALLAAxc
+53 A ALLAAxc
+40 A ALLAAxc
+192 A ALLAAxc
+51 A ALLAAxc
+90 A ALLAAxc
+77 A ALLAAxc
+48 A ALLAAxc
+49 A ALLAAxc
+79 A ALLAAxc

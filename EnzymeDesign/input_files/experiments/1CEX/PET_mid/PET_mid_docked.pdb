@@ -1,0 +1,365 @@
+HETATM    1  C1  PET X   1      25.117  58.324  23.563  1.00  0.00           C  
+HETATM    2  O1  PET X   1      36.927  66.794  28.758  1.00  0.00           O  
+HETATM    3  C2  PET X   1      34.665  62.060  27.798  1.00  0.00           C  
+HETATM    4  O2  PET X   1       8.422  54.556  15.282  1.00  0.00           O  
+HETATM    5  C3  PET X   1      12.979  50.382  15.172  1.00  0.00           C  
+HETATM    6  O3  PET X   1      12.589  49.349  14.664  1.00  0.00           O  
+HETATM    7  C4  PET X   1      32.717  60.761  27.906  1.00  0.00           C  
+HETATM    8  O4  PET X   1      36.407  61.727  29.175  1.00  0.00           O  
+HETATM    9  C5  PET X   1      10.431  53.581  15.548  1.00  0.00           C  
+HETATM   10  O5  PET X   1      15.974  49.765  12.463  1.00  0.00           O  
+HETATM   11  C6  PET X   1      37.084  64.440  28.482  1.00  0.00           C  
+HETATM   12  O6  PET X   1      25.842  48.154   7.665  1.00  0.00           O  
+HETATM   13  C7  PET X   1      10.283  52.674  14.564  1.00  0.00           C  
+HETATM   14  O7  PET X   1      29.330  42.381   8.007  1.00  0.00           O  
+HETATM   15  C8  PET X   1       9.584  54.653  15.628  1.00  0.00           C  
+HETATM   16  O8  PET X   1      16.235  47.662  13.173  1.00  0.00           O  
+HETATM   17  C9  PET X   1      36.079  75.407  33.272  1.00  0.00           C  
+HETATM   18  O9  PET X   1      22.444  49.550  10.531  1.00  0.00           O  
+HETATM   19  C10 PET X   1      30.862  61.151  26.406  1.00  0.00           C  
+HETATM   20  O10 PET X   1      20.440  42.410   6.355  1.00  0.00           O  
+HETATM   21  C11 PET X   1      33.950  61.062  28.347  1.00  0.00           C  
+HETATM   22  O11 PET X   1      27.861  41.172   6.979  1.00  0.00           O  
+HETATM   23  C12 PET X   1      34.092  62.730  26.785  1.00  0.00           C  
+HETATM   24  O12 PET X   1      26.288  38.957   6.490  1.00  0.00           O  
+HETATM   25  C13 PET X   1      16.744  48.641  12.660  1.00  0.00           C  
+HETATM   26  O13 PET X   1      17.675  58.814  20.817  1.00  0.00           O  
+HETATM   27  C14 PET X   1      25.283  47.075   7.671  1.00  0.00           C  
+HETATM   28  O14 PET X   1      35.931  71.808  33.580  1.00  0.00           O  
+HETATM   29  C15 PET X   1      20.705  48.518  11.457  1.00  0.00           C  
+HETATM   30  O15 PET X   1      18.365  59.391  18.767  1.00  0.00           O  
+HETATM   31  C16 PET X   1      27.350  45.942   7.593  1.00  0.00           C  
+HETATM   32  O16 PET X   1      36.651  63.371  27.681  1.00  0.00           O  
+HETATM   33  C17 PET X   1      19.920  47.423  11.497  1.00  0.00           C  
+HETATM   34  O17 PET X   1      35.083  76.394  33.442  1.00  0.00           O  
+HETATM   35  C18 PET X   1      15.359  50.244  14.777  1.00  0.00           C  
+HETATM   36  O18 PET X   1      36.590  73.380  32.135  1.00  0.00           O  
+HETATM   37  C19 PET X   1      28.215  42.398   7.507  1.00  0.00           C  
+HETATM   38  O19 PET X   1      30.240  60.239  26.932  1.00  0.00           O  
+HETATM   39  C20 PET X   1      12.131  51.445  15.320  1.00  0.00           C  
+HETATM   40  O20 PET X   1      14.271  50.454  15.642  1.00  0.00           O  
+HETATM   41  C21 PET X   1      10.518  58.174  16.208  1.00  0.00           C  
+HETATM   42  O21 PET X   1      11.830  57.842  16.568  1.00  0.00           O  
+HETATM   43  C22 PET X   1      22.021  48.529  11.054  1.00  0.00           C  
+HETATM   44  O22 PET X   1      10.012  55.841  16.171  1.00  0.00           O  
+HETATM   45  C23 PET X   1      18.636  47.463  11.890  1.00  0.00           C  
+HETATM   46  O23 PET X   1      20.275  42.325   4.128  1.00  0.00           O  
+HETATM   47  C24 PET X   1      23.822  40.214   4.169  1.00  0.00           C  
+HETATM   48  O24 PET X   1      11.479  57.399  18.663  1.00  0.00           O  
+HETATM   49  C25 PET X   1      18.056  48.613  12.273  1.00  0.00           C  
+HETATM   50  O25 PET X   1      21.399  59.095  20.752  1.00  0.00           O  
+HETATM   51  C26 PET X   1      24.452  39.932   5.325  1.00  0.00           C  
+HETATM   52  O26 PET X   1      26.109  38.847   4.267  1.00  0.00           O  
+HETATM   53  C27 PET X   1      22.732  41.055   6.451  1.00  0.00           C  
+HETATM   54  O27 PET X   1      23.909  47.034   7.709  1.00  0.00           O  
+HETATM   55  C28 PET X   1      22.668  40.901   4.154  1.00  0.00           C  
+HETATM   56  O28 PET X   1      22.985  47.546  11.143  1.00  0.00           O  
+HETATM   57  C29 PET X   1      28.274  39.911   7.415  1.00  0.00           C  
+HETATM   58  O29 PET X   1      30.148  61.758  25.394  1.00  0.00           O  
+HETATM   59  C30 PET X   1      27.689  38.861   6.475  1.00  0.00           C  
+HETATM   60  O30 PET X   1      27.670  60.818  22.972  1.00  0.00           O  
+HETATM   61  C31 PET X   1      20.073  43.676   3.783  1.00  0.00           C  
+HETATM   62  O31 PET X   1      36.449  68.430  27.427  1.00  0.00           O  
+HETATM   63  C32 PET X   1      12.318  57.766  17.855  1.00  0.00           C  
+HETATM   64  O32 PET X   1      27.546  59.077  24.367  1.00  0.00           O  
+HETATM   65  C33 PET X   1      16.140  58.651  19.194  1.00  0.00           C  
+HETATM   66  O33 PET X   1      21.425  57.384  22.187  1.00  0.00           O  
+HETATM   67  C34 PET X   1      22.010  58.347  21.730  1.00  0.00           C  
+HETATM   68  C35 PET X   1      36.292  72.077  32.451  1.00  0.00           C  
+HETATM   69  C36 PET X   1      27.003  59.735  23.499  1.00  0.00           C  
+HETATM   70  C37 PET X   1      19.651  59.715  19.232  1.00  0.00           C  
+HETATM   71  C38 PET X   1      28.951  61.122  23.461  1.00  0.00           C  
+HETATM   72  C39 PET X   1      28.863  61.433  24.952  1.00  0.00           C  
+HETATM   73  C40 PET X   1      23.893  57.973  23.135  1.00  0.00           C  
+HETATM   74  C41 PET X   1      23.260  58.680  22.181  1.00  0.00           C  
+HETATM   75  C42 PET X   1      32.860  62.413  26.350  1.00  0.00           C  
+HETATM   76  C43 PET X   1      36.477  65.740  27.963  1.00  0.00           C  
+HETATM   77  C44 PET X   1      32.121  61.423  26.896  1.00  0.00           C  
+HETATM   78  C45 PET X   1      36.263  70.433  29.254  1.00  0.00           C  
+HETATM   79  C46 PET X   1      35.597  74.361  32.282  1.00  0.00           C  
+HETATM   80  C47 PET X   1      35.919  62.360  28.258  1.00  0.00           C  
+HETATM   81  C48 PET X   1      18.826  49.714  12.261  1.00  0.00           C  
+HETATM   82  C49 PET X   1      14.906  50.030  13.337  1.00  0.00           C  
+HETATM   83  C50 PET X   1      20.109  49.659  11.870  1.00  0.00           C  
+HETATM   84  C51 PET X   1      11.433  53.390  16.426  1.00  0.00           C  
+HETATM   85  C52 PET X   1      12.269  52.344  16.313  1.00  0.00           C  
+HETATM   86  C53 PET X   1      11.116  51.626  14.455  1.00  0.00           C  
+HETATM   87  C54 PET X   1       9.942  57.012  15.397  1.00  0.00           C  
+HETATM   88  C55 PET X   1      23.886  40.369   6.466  1.00  0.00           C  
+HETATM   89  C56 PET X   1      22.101  41.335   5.295  1.00  0.00           C  
+HETATM   90  C57 PET X   1      20.925  42.035   5.305  1.00  0.00           C  
+HETATM   91  C58 PET X   1      26.006  45.913   7.635  1.00  0.00           C  
+HETATM   92  C59 PET X   1      25.427  44.700   7.636  1.00  0.00           C  
+HETATM   93  C60 PET X   1      27.517  43.585   7.551  1.00  0.00           C  
+HETATM   94  C61 PET X   1      28.075  44.811   7.556  1.00  0.00           C  
+HETATM   95  C62 PET X   1      23.685  46.965  10.082  1.00  0.00           C  
+HETATM   96  C63 PET X   1      23.231  47.628   8.785  1.00  0.00           C  
+HETATM   97  C64 PET X   1      13.943  57.957  19.622  1.00  0.00           C  
+HETATM   98  C65 PET X   1      20.120  58.734  20.303  1.00  0.00           C  
+HETATM   99  C66 PET X   1      17.404  58.933  19.639  1.00  0.00           C  
+HETATM  100  C67 PET X   1      15.187  58.239  20.046  1.00  0.00           C  
+HETATM  101  C68 PET X   1      15.794  58.757  17.898  1.00  0.00           C  
+HETATM  102  C69 PET X   1      14.551  58.459  17.485  1.00  0.00           C  
+HETATM  103  C70 PET X   1      13.576  58.060  18.331  1.00  0.00           C  
+HETATM  104  C71 PET X   1      25.625  39.227   5.316  1.00  0.00           C  
+HETATM  105  C72 PET X   1      26.166  43.579   7.593  1.00  0.00           C  
+HETATM  106  C73 PET X   1      25.126  60.096  22.092  1.00  0.00           C  
+HETATM  107  C74 PET X   1      23.900  59.748  21.669  1.00  0.00           C  
+HETATM  108  C75 PET X   1      36.385  71.097  31.499  1.00  0.00           C  
+HETATM  109  C76 PET X   1      36.760  68.884  30.839  1.00  0.00           C  
+HETATM  110  C77 PET X   1      36.180  71.382  30.202  1.00  0.00           C  
+HETATM  111  C78 PET X   1      36.645  68.138  28.597  1.00  0.00           C  
+HETATM  112  C79 PET X   1      36.552  69.147  29.529  1.00  0.00           C  
+HETATM  113  C80 PET X   1      36.681  69.821  31.799  1.00  0.00           C  
+HETATM  114  C81 PET X   1      25.757  59.392  23.050  1.00  0.00           C  
+HETATM  115  H1  PET X   1      23.428  45.882  10.011  1.00  0.00           H  
+HETATM  116  H2  PET X   1      24.777  47.149  10.212  1.00  0.00           H  
+HETATM  117  H3  PET X   1      23.478  48.716   8.825  1.00  0.00           H  
+HETATM  118  H4  PET X   1      24.230  39.889   3.198  1.00  0.00           H  
+HETATM  119  H5  PET X   1      22.324  41.380   7.423  1.00  0.00           H  
+HETATM  120  H6  PET X   1      22.212  41.091   3.167  1.00  0.00           H  
+HETATM  121  H7  PET X   1      11.614  54.089  17.261  1.00  0.00           H  
+HETATM  122  H8  PET X   1      13.073  52.261  17.064  1.00  0.00           H  
+HETATM  123  H9  PET X   1      38.198  64.493  28.452  1.00  0.00           H  
+HETATM  124  H10 PET X   1      36.743  64.281  29.534  1.00  0.00           H  
+HETATM  125  H11 PET X   1      32.252  59.919  28.429  1.00  0.00           H  
+HETATM  126  H12 PET X   1      36.821  65.892  26.913  1.00  0.00           H  
+HETATM  127  H13 PET X   1      15.961  51.184  14.810  1.00  0.00           H  
+HETATM  128  H14 PET X   1      10.528  56.861  14.459  1.00  0.00           H  
+HETATM  129  H15 PET X   1      18.070  46.515  11.890  1.00  0.00           H  
+HETATM  130  H16 PET X   1      20.273  46.422  11.235  1.00  0.00           H  
+HETATM  131  H17 PET X   1      25.578  57.703  24.349  1.00  0.00           H  
+HETATM  132  H18 PET X   1      36.078  70.808  28.244  1.00  0.00           H  
+HETATM  133  H19 PET X   1      36.271  74.956  34.272  1.00  0.00           H  
+HETATM  134  H20 PET X   1      35.937  72.408  29.877  1.00  0.00           H  
+HETATM  135  H21 PET X   1      13.267  57.597  20.405  1.00  0.00           H  
+HETATM  136  H22 PET X   1      19.409  58.767  21.163  1.00  0.00           H  
+HETATM  137  H23 PET X   1      20.374  59.808  18.393  1.00  0.00           H  
+HETATM  138  H24 PET X   1      19.575  60.731  19.688  1.00  0.00           H  
+HETATM  139  H25 PET X   1      29.624  60.247  23.296  1.00  0.00           H  
+HETATM  140  H26 PET X   1      28.190  62.313  25.082  1.00  0.00           H  
+HETATM  141  H27 PET X   1      28.062  39.033   5.437  1.00  0.00           H  
+HETATM  142  H28 PET X   1      22.133  47.496   8.644  1.00  0.00           H  
+HETATM  143  H29 PET X   1      24.344  40.179   7.452  1.00  0.00           H  
+HETATM  144  H30 PET X   1      27.882  39.722   8.441  1.00  0.00           H  
+HETATM  145  H31 PET X   1      29.386  39.842   7.348  1.00  0.00           H  
+HETATM  146  H32 PET X   1      27.987  37.843   6.819  1.00  0.00           H  
+HETATM  147  H33 PET X   1       8.881  57.243  15.142  1.00  0.00           H  
+HETATM  148  H34 PET X   1      10.518  59.078  15.558  1.00  0.00           H  
+HETATM  149  H35 PET X   1      10.935  50.927  13.620  1.00  0.00           H  
+HETATM  150  H36 PET X   1       9.481  52.761  13.813  1.00  0.00           H  
+HETATM  151  H37 PET X   1      35.369  65.653  28.058  1.00  0.00           H  
+HETATM  152  H38 PET X   1      14.329  50.904  12.956  1.00  0.00           H  
+HETATM  153  H39 PET X   1      25.577  42.646   7.597  1.00  0.00           H  
+HETATM  154  H40 PET X   1      27.897  46.901   7.589  1.00  0.00           H  
+HETATM  155  H41 PET X   1      18.433  50.699  12.567  1.00  0.00           H  
+HETATM  156  H42 PET X   1      16.027  49.450  15.172  1.00  0.00           H  
+HETATM  157  H43 PET X   1      14.217  49.155  13.284  1.00  0.00           H  
+HETATM  158  H44 PET X   1      25.583  60.984  21.622  1.00  0.00           H  
+HETATM  159  H45 PET X   1      23.433  57.086  23.602  1.00  0.00           H  
+HETATM  160  H46 PET X   1      28.502  60.522  25.484  1.00  0.00           H  
+HETATM  161  H47 PET X   1      29.350  62.013  22.920  1.00  0.00           H  
+HETATM  162  H48 PET X   1      20.154  57.702  19.883  1.00  0.00           H  
+HETATM  163  H49 PET X   1      35.395  74.839  31.294  1.00  0.00           H  
+HETATM  164  H50 PET X   1      34.610  63.561  26.275  1.00  0.00           H  
+HETATM  165  H51 PET X   1      34.666  73.886  32.670  1.00  0.00           H  
+HETATM  166  H52 PET X   1      37.004  75.914  32.919  1.00  0.00           H  
+HETATM  167  H53 PET X   1      35.386  77.056  34.068  1.00  0.00           H  
+HETATM  168  H54 PET X   1      37.006  67.874  31.209  1.00  0.00           H  
+HETATM  169  H55 PET X   1      32.498  63.035  25.515  1.00  0.00           H  
+HETATM  170  H56 PET X   1      36.865  69.501  32.838  1.00  0.00           H  
+HETATM  171  H57 PET X   1      34.360  60.461  29.176  1.00  0.00           H  
+HETATM  172  H58 PET X   1      23.443  60.373  20.884  1.00  0.00           H  
+HETATM  173  H59 PET X   1      19.541  43.703   2.806  1.00  0.00           H  
+HETATM  174  H60 PET X   1      16.517  59.082  17.130  1.00  0.00           H  
+HETATM  175  H61 PET X   1      19.436  44.177   4.546  1.00  0.00           H  
+HETATM  176  H62 PET X   1      21.052  44.194   3.670  1.00  0.00           H  
+HETATM  177  H63 PET X   1      14.381  58.578  16.402  1.00  0.00           H  
+HETATM  178  H64 PET X   1      15.401  58.113  21.121  1.00  0.00           H  
+HETATM  179  H65 PET X   1       9.897  58.304  17.125  1.00  0.00           H  
+HETATM  180  H66 PET X   1      24.330  44.585   7.668  1.00  0.00           H  
+HETATM  181  H67 PET X   1      20.641  50.627  11.896  1.00  0.00           H  
+HETATM  182  H68 PET X   1      29.154  44.983   7.523  1.00  0.00           H  
+CONECT    1  114  131   73
+CONECT    2  111   76
+CONECT    3   23   80   21
+CONECT    4   15
+CONECT    5    6   40   39
+CONECT    6    5
+CONECT    7   21  125   77
+CONECT    8   80
+CONECT    9   13   84   15
+CONECT   10   25   82
+CONECT   11   76  123  124   32
+CONECT   12   27
+CONECT   13    9  150   86
+CONECT   14   37
+CONECT   15    4    9   44
+CONECT   16   25
+CONECT   17   34  133  166   79
+CONECT   18   43
+CONECT   19   38   77   58
+CONECT   20   90
+CONECT   21    7    3  171
+CONECT   22   57   37
+CONECT   23    3   75  164
+CONECT   24  104   59
+CONECT   25   10   16   49
+CONECT   26   99
+CONECT   27   12   91   54
+CONECT   28   68
+CONECT   29   43   83   33
+CONECT   30   70   99
+CONECT   31  154   91   94
+CONECT   32   11   80
+CONECT   33   29  130   45
+CONECT   34   17  167
+CONECT   35   82  127  156   40
+CONECT   36   79   68
+CONECT   37   14   22   93
+CONECT   38   19
+CONECT   39    5   86   85
+CONECT   40    5   35
+CONECT   41   87  148  179   42
+CONECT   42   41   63
+CONECT   43   29   18   56
+CONECT   44   15   87
+CONECT   45   33  129   49
+CONECT   46   61   90
+CONECT   47   55  118   51
+CONECT   48   63
+CONECT   49   25   45   81
+CONECT   50   67   98
+CONECT   51   47   88  104
+CONECT   52  104
+CONECT   53   88  119   89
+CONECT   54   27   96
+CONECT   55   47   89  120
+CONECT   56   43   95
+CONECT   57   22   59  144  145
+CONECT   58   19   72
+CONECT   59   57   24  141  146
+CONECT   60   71   69
+CONECT   61   46  173  175  176
+CONECT   62  111
+CONECT   63   42   48  103
+CONECT   64   69
+CONECT   65   99  101  100
+CONECT   66   67
+CONECT   67   50   66   74
+CONECT   68   28   36  108
+CONECT   69   60   64  114
+CONECT   70   30   98  137  138
+CONECT   71   60   72  139  161
+CONECT   72   71   58  140  160
+CONECT   73    1  159   74
+CONECT   74   67   73  107
+CONECT   75   23  169   77
+CONECT   76   11    2  126  151
+CONECT   77   19    7   75
+CONECT   78  110  132  112
+CONECT   79   36   17  163  165
+CONECT   80    3    8   32
+CONECT   81   49  155   83
+CONECT   82   35   10  152  157
+CONECT   83   29   81  181
+CONECT   84    9   85  121
+CONECT   85   84   39  122
+CONECT   86   39   13  149
+CONECT   87   41   44  128  147
+CONECT   88   51   53  143
+CONECT   89   55   53   90
+CONECT   90   89   20   46
+CONECT   91   27   31   92
+CONECT   92   91  105  180
+CONECT   93   37   94  105
+CONECT   94   93   31  182
+CONECT   95   56   96  115  116
+CONECT   96   95   54  117  142
+CONECT   97  100  135  103
+CONECT   98   70   50  136  162
+CONECT   99   65   26   30
+CONECT  100   97   65  178
+CONECT  101   65  102  174
+CONECT  102  101  177  103
+CONECT  103   63   97  102
+CONECT  104   24   51   52
+CONECT  105   92   93  153
+CONECT  106  107  158  114
+CONECT  107   74  106  172
+CONECT  108   68  113  110
+CONECT  109  168  112  113
+CONECT  110   78  108  134
+CONECT  111    2   62  112
+CONECT  112  111   78  109
+CONECT  113  108  109  170
+CONECT  114    1   69  106
+CONECT  115   95
+CONECT  116   95
+CONECT  117   96
+CONECT  118   47
+CONECT  119   53
+CONECT  120   55
+CONECT  121   84
+CONECT  122   85
+CONECT  123   11
+CONECT  124   11
+CONECT  125    7
+CONECT  126   76
+CONECT  127   35
+CONECT  128   87
+CONECT  129   45
+CONECT  130   33
+CONECT  131    1
+CONECT  132   78
+CONECT  133   17
+CONECT  134  110
+CONECT  135   97
+CONECT  136   98
+CONECT  137   70
+CONECT  138   70
+CONECT  139   71
+CONECT  140   72
+CONECT  141   59
+CONECT  142   96
+CONECT  143   88
+CONECT  144   57
+CONECT  145   57
+CONECT  146   59
+CONECT  147   87
+CONECT  148   41
+CONECT  149   86
+CONECT  150   13
+CONECT  151   76
+CONECT  152   82
+CONECT  153  105
+CONECT  154   31
+CONECT  155   81
+CONECT  156   35
+CONECT  157   82
+CONECT  158  106
+CONECT  159   73
+CONECT  160   72
+CONECT  161   71
+CONECT  162   98
+CONECT  163   79
+CONECT  164   23
+CONECT  165   79
+CONECT  166   17
+CONECT  167   34
+CONECT  168  109
+CONECT  169   75
+CONECT  170  113
+CONECT  171   21
+CONECT  172  107
+CONECT  173   61
+CONECT  174  101
+CONECT  175   61
+CONECT  176   61
+CONECT  177  102
+CONECT  178  100
+CONECT  179   41
+CONECT  180   92
+CONECT  181   83
+CONECT  182   94
+END

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ROSETTA=/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle
+mpirun relax.mpi.linuxgccrelease @flags -extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/BHET/BHET.params -s /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/BHET/1cex_BHET.pdb
+#mpirun relax.mpi.linuxgccrelease @flags -extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/PET_end/PET.params -s /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/PET_end/1cex_PET_end.pdb
+#mpirun relax.mpi.linuxgccrelease @flags -extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/PET_mid/PET.params -s /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/PET_mid/1cex_PET_mid.pdb
+
+
+#mpirun relax.mpi.linuxgccrelease @flags -extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/PETase/BHET/BHET.params -s /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/PETase/BHET/5xjh_BHET.pdb
+#mpirun relax.mpi.linuxgccrelease @flags -extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/PETase/PET_end/PET.params -s /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/PETase/PET_end/5xjh_PET_end.pdb
+#mpirun relax.mpi.linuxgccrelease @flags -extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/PETase/PET_mid/PET.params -s /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/PETase/PET_mid/5xjh_PET_mid.pdb
+curl --include --request POST --header "Content-Type: application/json" --header "X-Authorization: ML5U5PCQQ68A8ZHN52W4BHXKBWVNVF5TEYHYKLXLWJ5RQXDFWUEE7IJZ3HCPR1QC9G2H36YMY8XWE1973I7W55P9LHI2JX5L9N7C" --header "X-UserId: kovszasz" --data-binary "{\"message\": \"Calibration is done!\"}" --url 'https://api.spontit.com/v3/push'

@@ -1,0 +1,3 @@
+ROSETTA=/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle
+mpirun -np 11 rosetta_scripts.mpi.linuxgccrelease -database $ROSETTA/main/database/ -parser:protocol -in:file:s "$1 /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files_PETase/PET.pdb"  @input_files_PETase/dock_options.txt -out:file:scorefile $2.sc 
+curl --include --request POST --header "Content-Type: application/json" --header "X-Authorization: ML5U5PCQQ68A8ZHN52W4BHXKBWVNVF5TEYHYKLXLWJ5RQXDFWUEE7IJZ3HCPR1QC9G2H36YMY8XWE1973I7W55P9LHI2JX5L9N7C" --header "X-UserId: kovszasz" --data-binary "{\"message\": \"PET docking is done!\"}" --url 'https://api.spontit.com/v3/push'

@@ -1,0 +1,12 @@
+-extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files/PET.params 
+-score:weights beta_nov16
+-corrections::beta_nov16 
+-ex1  
+-ex2 
+-ex1aro:level 4 
+-no_optH false  
+-flip_HNQ true  
+-ignore_ligand_chi false 
+-parser:protocol /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files/ligand_dock.xml 
+-nstruct 1000
+-overwrite 

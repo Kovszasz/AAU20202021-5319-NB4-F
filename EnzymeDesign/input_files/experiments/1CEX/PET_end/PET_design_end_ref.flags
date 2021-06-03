@@ -1,0 +1,28 @@
+-extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/PET_end/PET.params
+-ex1 
+-ex2 
+-use_input_sc
+-linmem_ig 10
+-score:weights beta_nov16
+-corrections::beta_nov16 
+-jd2::enzdes_out
+-resfile /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/resfile
+#-movemap /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/movemap
+-enzdes
+ -cstfile /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/PET_end/PET_end.cst
+ #-detect_design_interface
+ #-cut1 6.0
+ #-cut2 8.0
+ #-cut3 10.0
+ #-cut4 12.0
+ -cst_min
+ -cst_opt
+ -chi_min
+ -cst_design
+ -bb_min
+ -design_min_cycles 3
+ -lig_packer_weight 1.6
+ -favor_native_res 0.8
+ -start_from_random_rb_conf
+ #-compare_native /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/PET_end/native_pdbs/1cex_PET_end.pdb
+ -final_repack_without_ligand

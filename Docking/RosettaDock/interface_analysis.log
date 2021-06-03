@@ -1,0 +1,11 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: rosetta.binary.linux.release-247 r247 2020.08+release.cb1caba cb1cabafd7463ab703f6abf5efa33d2707b85924 https://www.rosettacommons.org 2020-02-21T14:46:08.581859
+core.init: command: InterfaceAnalyzer.static.linuxgccrelease -interface A_X -compute_packstat -pack_separated -score:weights ligandprime -no_nstruct_label -out:file:score_only design_interfaces_pre.sc -l pdbs.txt -extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/BHET/BHET.params -overwrite
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-2022895340 seed_offset=0 real_seed=-2022895340
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-2022895340 RG_type=mt19937
+core.init: Resolved executable path: /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/3.10/64/x86/gcc/4.8/static/InterfaceAnalyzer.static.linuxgccrelease
+core.init: Looking for database based on location of executable: /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+basic.options.util: [ FATAL ] Use either -s or -l to designate one or more start_files
+Error: [ ERROR ] ERROR: Exception caught by JobDistributor while trying to fill the input jobs with JobInputter of type type 'PdbFile'

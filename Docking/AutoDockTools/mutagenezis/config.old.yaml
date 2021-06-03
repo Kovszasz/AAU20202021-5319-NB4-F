@@ -1,0 +1,34 @@
+INPUT: {PDB: 1CEX}
+MUTAGENEZIS:
+- MUTANT:
+  - {aa: A, chain: A, pos: 120}
+- MUTANT:
+  - {aa: P, chain: A, pos: 45}
+- MUTANT:
+  - {aa: N, chain: A, pos: 21}
+- MUTANT:
+  - {aa: W, chain: A, pos: 85}
+- MUTANT:
+  - {aa: A, chain: A, pos: 182}
+- MUTANT:
+  - {aa: W, chain: A, pos: 85}
+  - {aa: A, chain: A, pos: 182}
+- MUTANT:
+  - {aa: C, chain: A, pos: 84}
+- MUTANT:
+  - {aa: C, chain: A, pos: 182}
+- MUTANT:
+  - {aa: C, chain: A, pos: 84}
+  - {aa: C, chain: A, pos: 182}
+- MUTANT:
+  - {aa: N, chain: A, pos: 83}
+- MUTANT:
+  - {aa: A, chain: A, pos: 83}
+  - {aa: A, chain: A, pos: 115}
+- MUTANT:
+  - {aa: G, chain: A, pos: 83}
+- MUTANT:
+  - {aa: G, chain: A, pos: 81}
+  - {aa: G, chain: A, pos: 182}
+- MUTANT:
+  - {aa: F, chain: A, pos: 69}

@@ -1,0 +1,10 @@
+"SampleConformations(
+      conformation_comparer=Dihedral(method=Max),generate_3D=0,tolerance=2.5,unbiased=True,
+      max_iterations=1000,temperature=2,clash_weight=0,sampling_tolerance=1,
+      change_chirality=0,
+      clash_tolerance=0.1,
+      max_conformations=100,
+      add_missing_rings=true
+      )"
+bcl.exe molecule:ConformerGenerator -license_file /home/ubuntu/Downloads/bcl-4.0.0-Linux-x86_64/bcl.license -ensemble_filenames BHET.sdf -add_h -conformation_comparer Dihedral -max_iterations 1000 -max_clash_tolerance 0.1 -conformers_single_file BHET_confs.sdf
+bcl.exe molecule:ConformerGenerator -license_file /home/ubuntu/Downloads/bcl-4.0.0-Linux-x86_64/bcl.license -ensemble BHET.sdf -conformation_comparer DihedralBins -temperature 1.0 -max_iterations 1000 -top_models 100 -bin_size 30.0 -scheduler PThread 8 -add_h -conformers_single_file BHET_confs

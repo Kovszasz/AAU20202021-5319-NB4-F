@@ -1,0 +1,2 @@
+req interface_delta_X value < -10
+output sortmin total_score

@@ -1,0 +1,48 @@
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: rosetta_scripts.static.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-16)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+ -in:path:database=/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/ -in:file:s="/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files/1cex.pdb /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files/BHET.pdb" -in:file:extra_res_fa=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files/BHET.params -out:overwrite -out:nstruct=5 -out:file:scorefile=dock_test_BHET_1CEX.sc -parser:protocol=./home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files/ligand_dock.xml -score:weights=beta_nov15 -packing:ignore_ligand_chi=false -packing:no_optH=false -packing:flip_HNQ -packing:ex1 -packing:ex2 -packing:ex1aro:level=4
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+[0x3a91d6f]
+[0x5fe5ef3]
+[0x608c3d6]
+[0x38bcf35]
+[0x38c3989]
+[0x38c43f4]
+[0x38c4f8d]
+[0x393d651]
+[0x393ebc1]
+[0x39d8148]
+[0x411fcb]
+[0x65816d4]
+[0x630dfd]
+
+[END_BACKTRACE]
+
+[FILE]: src/protocols/rosetta_scripts/RosettaScriptsParser.cc
+[LINE]: 649
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Unable to open RosettaScripts XML file: "./home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/dock_design/docking/input_files/ligand_dock.xml".
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+

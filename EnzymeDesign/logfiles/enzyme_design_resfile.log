@@ -1,0 +1,182 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init.score_function_corrections: [ WARNING ] Flag -beta_nov16 is set but either -weights are also specified or this is being used with the genpot score function.  Not changing input weights file!
+core.init: Rosetta version: rosetta.binary.linux.release-247 r247 2020.08+release.cb1caba cb1cabafd7463ab703f6abf5efa33d2707b85924 https://www.rosettacommons.org 2020-02-21T14:46:08.581859
+core.init: command: enzyme_design.static.linuxgccrelease -nstruct 1 @input_files/experiments/5XJH/PET_end/PET_design_end_ref.flags -database /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/ -out::overwrite -out:file:o scorefile_resfile.sc -out::suffix resfile -s input_files/experiments/5XJH/PET_end/5xjh_PET_end_c.pdb -resfile /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/REF/5XJH//resfile
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-782000394 seed_offset=0 real_seed=-782000394
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-782000394 RG_type=mt19937
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/PairEPotential/pdb_pair_stats_fine
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+core.scoring.ramachandran: shapovalov_lib::shap_rama_smooth_level of 4( aka highest_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/rama/shapovalov/kappa25/all.ramaProb
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 981 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 1.49 seconds.
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: beta_nov16
+basic.io.database: Database file opened: scoring/score_functions/rama/fd_beta_nov2016/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd_beta_nov2016/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/hydroxyl_torsion_preference.txt
+basic.io.database: Database file opened: scoring/score_functions/envsmooth/envdata.txt
+basic.io.database: Database file opened: scoring/score_functions/carbon_hbond/ch_o_bond_potential.dat
+basic.io.database: Database file opened: scoring/score_functions/custom_pair_distance/pos_charge_repulsion
+basic.io.database: Database file opened: scoring/score_functions/custom_pair_distance/neg_charge_repulsion
+core.scoring.custom_pair_distance.FullatomCustomPairDistanceEnergy: Added 8 AtomPairFuncList lists
+protocols.jobdist.JobDistributors: Looking for an available job: 1 1 input_files/experiments/5XJH/PET_end/5xjh_PET_end_c.pdb 1
+apps.public.enzdes.enzyme_design: Starting 5xjh_PET_end_cresfile_0001 ...
+core.conformation.Conformation: Found disulfide between residues 174 210
+core.conformation.Conformation: current variant for 174 CYS
+core.conformation.Conformation: current variant for 210 CYS
+core.conformation.Conformation: current variant for 174 CYD
+core.conformation.Conformation: current variant for 210 CYD
+core.conformation.Conformation: Found disulfide between residues 244 260
+core.conformation.Conformation: current variant for 244 CYS
+core.conformation.Conformation: current variant for 260 CYS
+core.conformation.Conformation: current variant for 244 CYD
+core.conformation.Conformation: current variant for 260 CYD
+protocols.enzdes.EnzdesFixBBProtocol: starting apply function...
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/rotamer/beta_nov2016/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/rotamer/beta_nov2016/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.18 seconds to load from binary
+core.pack.rotamers.SingleLigandRotamerLibrary: Read in 598 rotamers from /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/5XJH/PET_end/PET_conformers.pdb !
+protocols.toolbox.match_enzdes_util.MatchConstraintFileIfo: [ WARNING ] No appropriate atoms found for entry 1 in constraint 1
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: read enzyme constraints from /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/5XJH/PET_end/PET_end.cst ... done, 3 cst blocks were read.
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: Generating constraints for pose... 
+protocols.toolbox.match_enzdes_util.EnzConstraintParameters: for block 1, 4 newly generated constraints were added 
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: checking cst data consistency for block 1...  done
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: Cst Block 1done... 
+protocols.toolbox.match_enzdes_util.EnzConstraintParameters: for block 2, 4 newly generated constraints were added 
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: checking cst data consistency for block 2...  done
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: Cst Block 2done... 
+protocols.toolbox.match_enzdes_util.EnzConstraintParameters: for block 3, 3 newly generated constraints were added 
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: checking cst data consistency for block 3...  done
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: Cst Block 3done... 
+protocols.enzdes.EnzdesBaseProtocol: Catalytic residues (pose numbering) are: 131 177 208 264 
+protocols.enzdes.EnzdesFixBBProtocol: Done setting up the task and constraints... 
+core.pack.task: Packer task: initialize from command line() 
+protocols.enzdes.EnzdesTaskOperations: Reading resfile input from: /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/REF/5XJH//resfile
+protocols.enzdes.EnzdesTaskOperations: Choosing the following residues as targets for detecting interface: 264+
+protocols.enzdes.EnzdesTaskOperations: Design Interface: detected 0 design-shell residues and 27 repack-shell residues, shell sizes cut1-4 used were 0 0 10 10
+protocols.enzdes.EnzdesTaskOperations: Design-shell Residues(pose-numbering): 
+protocols.enzdes.EnzdesTaskOperations: Repack-shell Residues(pose-numbering): 56+57+58+59+60+61+62+63+64+65+87+88+130+131+132+154+156+177+178+179+180+207+208+209+212+213+264+
+protocols.enzdes.EnzdesTaskOperations: Final Design Shell Residues: 4, 
+protocols.enzdes.EnzdesTaskOperations: Final Repack Shell Residues: 4, 
+protocols.enzdes.EnzdesTaskOperations: Packer Energies between ligand and design residues are upweighted by factor 1.6.
+protocols.enzdes.EnzdesTaskOperations: SetCatalyticResPackBehavior task operation touched the following catalytic residues: 131, 177, 208, 264, 
+protocols.enzdes.EnzdesFixBBProtocol: starting cst_opt minimization...
+protocols.enzdes.EnzdesBaseProtocol: Doing a pose minimization... the backbone is allowed to move at positions: 2, 3, 4, 5, 6, 
+protocols.ligand_docking.LigandBaseProtocol: Moved ligand FOLD_TREE  EDGE 1 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+protocols.ligand_docking.LigandBaseProtocol: Final loops foldtree FOLD_TREE  EDGE 1 4 -1  JEDGE 1 7 2 CA CA  END  EDGE 7 5 -1  EDGE 7 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+basic.io.database: Database file opened: scoring/score_functions/disulfides/fa_SS_distance_score
+protocols.enzdes.EnzdesFixBBProtocol: done cst_opt minimization.
+core.pack.task: Packer task: initialize from command line() 
+protocols.enzdes.EnzdesTaskOperations: Reading resfile input from: /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/REF/5XJH//resfile
+protocols.enzdes.EnzdesTaskOperations: Choosing the following residues as targets for detecting interface: 264+
+protocols.enzdes.EnzdesTaskOperations: Design Interface: detected 0 design-shell residues and 27 repack-shell residues, shell sizes cut1-4 used were 0 0 10 10
+protocols.enzdes.EnzdesTaskOperations: Design-shell Residues(pose-numbering): 
+protocols.enzdes.EnzdesTaskOperations: Repack-shell Residues(pose-numbering): 56+57+58+59+60+61+62+63+64+65+87+88+130+131+132+154+156+177+178+179+180+207+208+209+212+213+264+
+protocols.enzdes.EnzdesTaskOperations: Final Design Shell Residues: 4, 
+protocols.enzdes.EnzdesTaskOperations: Final Repack Shell Residues: 4, 
+protocols.enzdes.EnzdesTaskOperations: Packer Energies between ligand and design residues are upweighted by factor 1.6.
+protocols.enzdes.EnzdesTaskOperations: SetCatalyticResPackBehavior task operation touched the following catalytic residues: 131, 177, 208, 264, 
+protocols.enzdes.EnzdesFixBBProtocol: starting cst_design, 3 cycles of design/minimization ... 
+protocols.enzdes.EnzdesCacheableObserver: favor_native_res: adding a bonus of 0.8 for native residues to pose.
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating LinearMemoryInteractionGraph
+protocols.enzdes.EnzdesBaseProtocol: Doing a pose minimization... the backbone is allowed to move at positions: 2, 3, 4, 5, 6, 
+protocols.ligand_docking.LigandBaseProtocol: Moved ligand FOLD_TREE  EDGE 1 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+protocols.ligand_docking.LigandBaseProtocol: Final loops foldtree FOLD_TREE  EDGE 1 3 -1  JEDGE 1 7 2 CA CA  END  EDGE 7 4 -1  EDGE 7 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+core.optimization.LineMinimizer: [ ERROR ] Inaccurate G! step= 3.8147e-06 Deriv= -5.02183e-05 Finite Diff= 4.00245e-05
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating LinearMemoryInteractionGraph
+protocols.enzdes.EnzdesBaseProtocol: Doing a pose minimization... the backbone is allowed to move at positions: 2, 3, 4, 5, 6, 
+protocols.ligand_docking.LigandBaseProtocol: Moved ligand FOLD_TREE  EDGE 1 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+protocols.ligand_docking.LigandBaseProtocol: Final loops foldtree FOLD_TREE  EDGE 1 5 -1  JEDGE 1 7 2 CA CA  END  EDGE 7 6 -1  EDGE 7 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+core.optimization.LineMinimizer: [ ERROR ] Inaccurate G! step= 4.76837e-09 Deriv= -204.896 Finite Diff= 552350
+core.optimization.LineMinimizer: [ ERROR ] Inaccurate G! step= 1.81981e-06 Deriv= -17.5764 Finite Diff= 45833.1
+core.optimization.Minimizer: Line search failed even after resetting Hessian; aborting at iter#8
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating LinearMemoryInteractionGraph
+protocols.enzdes.EnzdesBaseProtocol: Doing a pose minimization... the backbone is allowed to move at positions: 2, 3, 4, 5, 6, 
+protocols.ligand_docking.LigandBaseProtocol: Moved ligand FOLD_TREE  EDGE 1 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+protocols.ligand_docking.LigandBaseProtocol: Final loops foldtree FOLD_TREE  EDGE 1 4 -1  JEDGE 1 7 2 CA CA  END  EDGE 7 5 -1  EDGE 7 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+core.optimization.LineMinimizer: [ ERROR ] Inaccurate G! step= 4.76837e-09 Deriv= -17.6054 Finite Diff= 2258.05
+core.optimization.LineMinimizer: [ ERROR ] Inaccurate G! step= 1.81831e-06 Deriv= -17.6054 Finite Diff= 3.95206e+06
+core.optimization.Minimizer: Line search failed even after resetting Hessian; aborting at iter#8
+core.pack.task: Packer task: initialize from command line() 
+core.pack.task: Packer task: initialize from command line() 
+protocols.enzdes.EnzdesTaskOperations: Reading resfile input from: /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/REF/5XJH//resfile
+protocols.enzdes.EnzdesTaskOperations: Choosing the following residues as targets for detecting interface: 264+
+protocols.enzdes.EnzdesTaskOperations: Design Interface: detected 0 design-shell residues and 26 repack-shell residues, shell sizes cut1-4 used were 0 0 10 10
+protocols.enzdes.EnzdesTaskOperations: Design-shell Residues(pose-numbering): 
+protocols.enzdes.EnzdesTaskOperations: Repack-shell Residues(pose-numbering): 56+57+58+59+60+61+62+63+64+87+88+130+131+132+154+155+156+177+178+179+180+207+208+209+212+264+
+protocols.enzdes.EnzdesTaskOperations: Final Design Shell Residues: 
+protocols.enzdes.EnzdesTaskOperations: Final Repack Shell Residues: 4, 
+protocols.enzdes.EnzdesTaskOperations: SetCatalyticResPackBehavior task operation touched the following catalytic residues: 131, 177, 208, 264, 
+protocols.enzdes.EnzdesBaseProtocol: Doing a pose minimization... the backbone is allowed to move at positions: 2, 3, 4, 5, 6, 
+protocols.ligand_docking.LigandBaseProtocol: Moved ligand FOLD_TREE  EDGE 1 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+protocols.ligand_docking.LigandBaseProtocol: Final loops foldtree FOLD_TREE  EDGE 1 5 -1  JEDGE 1 7 2 CA CA  END  EDGE 7 6 -1  EDGE 7 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+core.pack.task: Packer task: initialize from command line() 
+protocols.enzdes.EnzdesTaskOperations: Reading resfile input from: /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/REF/5XJH//resfile
+protocols.enzdes.EnzdesTaskOperations: Choosing the following residues as targets for detecting interface: 264+
+protocols.enzdes.EnzdesTaskOperations: Design Interface: detected 0 design-shell residues and 25 repack-shell residues, shell sizes cut1-4 used were 0 0 10 10
+protocols.enzdes.EnzdesTaskOperations: Design-shell Residues(pose-numbering): 
+protocols.enzdes.EnzdesTaskOperations: Repack-shell Residues(pose-numbering): 56+57+58+59+60+61+62+63+64+87+88+130+131+132+154+156+177+178+179+180+207+208+209+212+264+
+protocols.enzdes.EnzdesTaskOperations: Final Design Shell Residues: 
+protocols.enzdes.EnzdesTaskOperations: Final Repack Shell Residues: 4, 
+protocols.enzdes.EnzdesTaskOperations: SetCatalyticResPackBehavior task operation touched the following catalytic residues: 131, 177, 208, 264, 
+protocols.enzdes.EnzdesFixBBProtocol: Starting after design unconstrained repack/minimization... 
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating LinearMemoryInteractionGraph
+protocols.enzdes.EnzdesBaseProtocol: Doing a pose minimization... the backbone is allowed to move at positions: 2, 3, 4, 5, 6, 
+protocols.ligand_docking.LigandBaseProtocol: Moved ligand FOLD_TREE  EDGE 1 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+protocols.ligand_docking.LigandBaseProtocol: Final loops foldtree FOLD_TREE  EDGE 1 5 -1  JEDGE 1 7 2 CA CA  END  EDGE 7 6 -1  EDGE 7 59 -1  EDGE 59 263 -1  EDGE 59 264 1 
+protocols.enzdes.EnzdesFixBBProtocol: Finished after design unconstrained repack/minimization... 
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBEval.csv
+protocols.vardist_solaccess: VarSolDistSasaCalculator::recompute
+protocols.vardist_solaccess: VarSolDistSasaCalculator::lookup
+protocols.vardist_solaccess: VarSolDistSasaCalculator::lookup
+basic.io.database: Database file opened: scoring/score_functions/SurfacePotential/average_hASA_by_res_and_neighbor.txt
+basic.io.database: Database file opened: scoring/score_functions/SurfacePotential/surface_score.txt
+basic.io.database: Database file opened: scoring/score_functions/SurfacePotential/hpatch_score.txt
+core.pack.task: Packer task: initialize from command line() 
+protocols.enzdes.EnzdesTaskOperations: Reading resfile input from: /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/REF/5XJH//resfile
+protocols.enzdes.EnzdesTaskOperations: Choosing the following residues as targets for detecting interface: 264+
+protocols.enzdes.EnzdesTaskOperations: Design Interface: detected 0 design-shell residues and 25 repack-shell residues, shell sizes cut1-4 used were 0 0 10 10
+protocols.enzdes.EnzdesTaskOperations: Design-shell Residues(pose-numbering): 
+protocols.enzdes.EnzdesTaskOperations: Repack-shell Residues(pose-numbering): 56+57+58+59+60+61+62+63+64+87+88+130+131+132+154+156+177+178+179+180+207+208+209+212+264+
+protocols.enzdes.EnzdesTaskOperations: Final Design Shell Residues: 
+protocols.enzdes.EnzdesTaskOperations: Final Repack Shell Residues: 4, 
+protocols.moves.RigidBodyMover: Translate: Jump (before): RT 0.215787 0.833089 -0.509312 0.95838 -0.0808466 0.273808 0.186931 -0.547199 -0.815862 23.368 -44.3648 17.8991  
+protocols.moves.RigidBodyMover: Translate: Jump (after):  RT 0.215787 0.833089 -0.509312 0.95838 -0.0808466 0.273808 0.186931 -0.547199 -0.815862 385.763 -530.375 293.616  
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating LinearMemoryInteractionGraph
+apps.public.enzdes.enzyme_design: Finished 5xjh_PET_end_cresfile_0001 in 36 seconds.
+apps.public.enzdes.enzyme_design: Finished all 1 structures in 40 seconds.

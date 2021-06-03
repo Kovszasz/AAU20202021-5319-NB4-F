@@ -1,0 +1,396 @@
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: relax.mpi.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: mpi (OpenMPI 2.1.1) 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.5.0"
+[STDLIB]: libstdc++ version 20191114
+[START_OPTIONS]
+ -in:file:s=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/BHET/1cex_BHET.pdb -in:file:extra_res_fa=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params -out:overwrite -out:nstruct=1 -out:suffix=_cartesian_calibrated -out:pdb_gz -run:constant_seed -score:weights=beta_nov16_cart.wts -packing:no_optH=false -packing:flip_HNQ -packing:use_input_sc -packing:ex1 -packing:ex2 -corrections:beta -relax:default_repeats=10 -relax:constrain_relax_to_start_coords -relax:coord_constrain_sidechains -relax:cartesian -relax:ramp_constraints=false
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7fc5bde73ba6]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7fc5bdeb6413]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x10f) [0x7fc5bde7711f]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x36) [0x7fc5bde76d46]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::read_topology_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::weak_ptr<core::chemical::AtomTypeSet const>, std::weak_ptr<core::chemical::ElementSet const>, std::weak_ptr<core::chemical::MMAtomTypeSet const>, std::weak_ptr<core::chemical::orbitals::OrbitalTypeSet const>)+0x5a8) [0x7fc5b6470ec8]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::init_restypes_from_commandline()+0x175) [0x7fc5b63bdb75]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::GlobalResidueTypeSet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x214) [0x7fc5b63be6e4]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::create_residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1f8) [0x7fc5b6380498]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(std::_Function_handler<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (), std::_Bind<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (core::chemical::ChemicalManager::*(core::chemical::ChemicalManager*, std::reference_wrapper<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const>))(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const> >::_M_invoke(std::_Any_data const&)+0x3e) [0x7fc5b638346e]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x169) [0x7fc5b637f2f9]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::read_canonical_rpp_tables()+0x150) [0x7fc5b78e3ba0]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::RamaPrePro()+0x62) [0x7fc5b78e4ec2]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::create_ramapp_instance()+0x4a) [0x7fc5b799d60a]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(std::_Function_handler<std::shared_ptr<core::scoring::RamaPrePro> (), std::_Bind<std::shared_ptr<core::scoring::RamaPrePro> (*())()> >::_M_invoke(std::_Any_data const&)+0x1d) [0x7fc5b79b594d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::get_RamaPrePro() const+0xed) [0x7fc5b79a0e7d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergy::RamaPreProEnergy()+0xb6) [0x7fc5b91f9226]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergyCreator::create_energy_method(core::scoring::methods::EnergyMethodOptions const&) const+0x3b) [0x7fc5b91f936b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::energy_method(core::scoring::ScoreType const&, core::scoring::methods::EnergyMethodOptions const&) const+0x5b) [0x7fc5b799f37b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::set_weight(core::scoring::ScoreType const&, double const&)+0x375) [0x7fc5b7953165]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_stream(std::istream&, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x7d3) [0x7fc5b7954043]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+0x93) [0x7fc5b7955783]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x5e) [0x7fc5b79558ae]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunctionFactory::create_score_function(utility::options::OptionCollection const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, utility::vector1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)+0xbad) [0x7fc5b7989e6d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(utility::options::OptionCollection const&, bool)+0x10fd) [0x7fc5b798c3ed]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(bool)+0x28) [0x7fc5b798db28]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(utility::options::OptionCollection const&, bool)+0x4c) [0x7fc5bff7fddc]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(bool)+0x28) [0x7fc5bff81528]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::Relax_main(bool)+0x33) [0x7fc5bff5ccb3]
+relax.mpi.linuxgccrelease(+0xb7da) [0x560116afb7da]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fc5bce4eb97]
+relax.mpi.linuxgccrelease(+0xb88a) [0x560116afb88a]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/chemical/residue_io.cc
+[LINE]: 144
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot find file '/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params or /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/chemical/residue_type_sets/fa_standard/residue_types//home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params'
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: relax.mpi.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: mpi (OpenMPI 2.1.1) 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.5.0"
+[STDLIB]: libstdc++ version 20191114
+[START_OPTIONS]
+ -in:file:s=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/BHET/1cex_BHET.pdb -in:file:extra_res_fa=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params -out:overwrite -out:nstruct=1 -out:suffix=_cartesian_calibrated -out:pdb_gz -run:constant_seed -score:weights=beta_nov16_cart.wts -packing:no_optH=false -packing:flip_HNQ -packing:use_input_sc -packing:ex1 -packing:ex2 -corrections:beta -relax:default_repeats=10 -relax:constrain_relax_to_start_coords -relax:coord_constrain_sidechains -relax:cartesian -relax:ramp_constraints=false
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7f3814ea1ba6]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7f3814ee4413]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x10f) [0x7f3814ea511f]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x36) [0x7f3814ea4d46]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::read_topology_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::weak_ptr<core::chemical::AtomTypeSet const>, std::weak_ptr<core::chemical::ElementSet const>, std::weak_ptr<core::chemical::MMAtomTypeSet const>, std::weak_ptr<core::chemical::orbitals::OrbitalTypeSet const>)+0x5a8) [0x7f380d49eec8]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::init_restypes_from_commandline()+0x175) [0x7f380d3ebb75]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::GlobalResidueTypeSet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x214) [0x7f380d3ec6e4]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::create_residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1f8) [0x7f380d3ae498]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(std::_Function_handler<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (), std::_Bind<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (core::chemical::ChemicalManager::*(core::chemical::ChemicalManager*, std::reference_wrapper<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const>))(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const> >::_M_invoke(std::_Any_data const&)+0x3e) [0x7f380d3b146e]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x169) [0x7f380d3ad2f9]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::read_canonical_rpp_tables()+0x150) [0x7f380e911ba0]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::RamaPrePro()+0x62) [0x7f380e912ec2]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::create_ramapp_instance()+0x4a) [0x7f380e9cb60a]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(std::_Function_handler<std::shared_ptr<core::scoring::RamaPrePro> (), std::_Bind<std::shared_ptr<core::scoring::RamaPrePro> (*())()> >::_M_invoke(std::_Any_data const&)+0x1d) [0x7f380e9e394d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::get_RamaPrePro() const+0xed) [0x7f380e9cee7d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergy::RamaPreProEnergy()+0xb6) [0x7f3810227226]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergyCreator::create_energy_method(core::scoring::methods::EnergyMethodOptions const&) const+0x3b) [0x7f381022736b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::energy_method(core::scoring::ScoreType const&, core::scoring::methods::EnergyMethodOptions const&) const+0x5b) [0x7f380e9cd37b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::set_weight(core::scoring::ScoreType const&, double const&)+0x375) [0x7f380e981165]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_stream(std::istream&, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x7d3) [0x7f380e982043]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+0x93) [0x7f380e983783]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x5e) [0x7f380e9838ae]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunctionFactory::create_score_function(utility::options::OptionCollection const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, utility::vector1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)+0xbad) [0x7f380e9b7e6d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(utility::options::OptionCollection const&, bool)+0x10fd) [0x7f380e9ba3ed]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(bool)+0x28) [0x7f380e9bbb28]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(utility::options::OptionCollection const&, bool)+0x4c) [0x7f3816fadddc]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(bool)+0x28) [0x7f3816faf528]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::Relax_main(bool)+0x33) [0x7f3816f8acb3]
+relax.mpi.linuxgccrelease(+0xb7da) [0x5566e2f7c7da]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f3813e7cb97]
+relax.mpi.linuxgccrelease(+0xb88a) [0x5566e2f7c88a]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/chemical/residue_io.cc
+[LINE]: 144
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot find file '/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params or /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/chemical/residue_type_sets/fa_standard/residue_types//home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params'
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: relax.mpi.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: mpi (OpenMPI 2.1.1) 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.5.0"
+[STDLIB]: libstdc++ version 20191114
+[START_OPTIONS]
+ -in:file:s=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/BHET/1cex_BHET.pdb -in:file:extra_res_fa=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params -out:overwrite -out:nstruct=1 -out:suffix=_cartesian_calibrated -out:pdb_gz -run:constant_seed -score:weights=beta_nov16_cart.wts -packing:no_optH=false -packing:flip_HNQ -packing:use_input_sc -packing:ex1 -packing:ex2 -corrections:beta -relax:default_repeats=10 -relax:constrain_relax_to_start_coords -relax:coord_constrain_sidechains -relax:cartesian -relax:ramp_constraints=false
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7fc0272d9ba6]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7fc02731c413]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x10f) [0x7fc0272dd11f]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x36) [0x7fc0272dcd46]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::read_topology_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::weak_ptr<core::chemical::AtomTypeSet const>, std::weak_ptr<core::chemical::ElementSet const>, std::weak_ptr<core::chemical::MMAtomTypeSet const>, std::weak_ptr<core::chemical::orbitals::OrbitalTypeSet const>)+0x5a8) [0x7fc01f8d6ec8]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::init_restypes_from_commandline()+0x175) [0x7fc01f823b75]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::GlobalResidueTypeSet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x214) [0x7fc01f8246e4]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::create_residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1f8) [0x7fc01f7e6498]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(std::_Function_handler<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (), std::_Bind<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (core::chemical::ChemicalManager::*(core::chemical::ChemicalManager*, std::reference_wrapper<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const>))(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const> >::_M_invoke(std::_Any_data const&)+0x3e) [0x7fc01f7e946e]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x169) [0x7fc01f7e52f9]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::read_canonical_rpp_tables()+0x150) [0x7fc020d49ba0]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::RamaPrePro()+0x62) [0x7fc020d4aec2]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::create_ramapp_instance()+0x4a) [0x7fc020e0360a]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(std::_Function_handler<std::shared_ptr<core::scoring::RamaPrePro> (), std::_Bind<std::shared_ptr<core::scoring::RamaPrePro> (*())()> >::_M_invoke(std::_Any_data const&)+0x1d) [0x7fc020e1b94d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::get_RamaPrePro() const+0xed) [0x7fc020e06e7d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergy::RamaPreProEnergy()+0xb6) [0x7fc02265f226]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergyCreator::create_energy_method(core::scoring::methods::EnergyMethodOptions const&) const+0x3b) [0x7fc02265f36b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::energy_method(core::scoring::ScoreType const&, core::scoring::methods::EnergyMethodOptions const&) const+0x5b) [0x7fc020e0537b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::set_weight(core::scoring::ScoreType const&, double const&)+0x375) [0x7fc020db9165]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_stream(std::istream&, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x7d3) [0x7fc020dba043]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+0x93) [0x7fc020dbb783]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x5e) [0x7fc020dbb8ae]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunctionFactory::create_score_function(utility::options::OptionCollection const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, utility::vector1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)+0xbad) [0x7fc020defe6d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(utility::options::OptionCollection const&, bool)+0x10fd) [0x7fc020df23ed]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(bool)+0x28) [0x7fc020df3b28]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(utility::options::OptionCollection const&, bool)+0x4c) [0x7fc0293e5ddc]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(bool)+0x28) [0x7fc0293e7528]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::Relax_main(bool)+0x33) [0x7fc0293c2cb3]
+relax.mpi.linuxgccrelease(+0xb7da) [0x55c158e6d7da]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fc0262b4b97]
+relax.mpi.linuxgccrelease(+0xb88a) [0x55c158e6d88a]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/chemical/residue_io.cc
+[LINE]: 144
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot find file '/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params or /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/chemical/residue_type_sets/fa_standard/residue_types//home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params'
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: relax.mpi.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: mpi (OpenMPI 2.1.1) 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.5.0"
+[STDLIB]: libstdc++ version 20191114
+[START_OPTIONS]
+ -in:file:s=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/BHET/1cex_BHET.pdb -in:file:extra_res_fa=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params -out:overwrite -out:nstruct=1 -out:suffix=_cartesian_calibrated -out:pdb_gz -run:constant_seed -score:weights=beta_nov16_cart.wts -packing:no_optH=false -packing:flip_HNQ -packing:use_input_sc -packing:ex1 -packing:ex2 -corrections:beta -relax:default_repeats=10 -relax:constrain_relax_to_start_coords -relax:coord_constrain_sidechains -relax:cartesian -relax:ramp_constraints=false
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7fa2b638fba6]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7fa2b63d2413]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x10f) [0x7fa2b639311f]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x36) [0x7fa2b6392d46]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::read_topology_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::weak_ptr<core::chemical::AtomTypeSet const>, std::weak_ptr<core::chemical::ElementSet const>, std::weak_ptr<core::chemical::MMAtomTypeSet const>, std::weak_ptr<core::chemical::orbitals::OrbitalTypeSet const>)+0x5a8) [0x7fa2ae98cec8]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::init_restypes_from_commandline()+0x175) [0x7fa2ae8d9b75]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::GlobalResidueTypeSet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x214) [0x7fa2ae8da6e4]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::create_residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1f8) [0x7fa2ae89c498]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(std::_Function_handler<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (), std::_Bind<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (core::chemical::ChemicalManager::*(core::chemical::ChemicalManager*, std::reference_wrapper<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const>))(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const> >::_M_invoke(std::_Any_data const&)+0x3e) [0x7fa2ae89f46e]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x169) [0x7fa2ae89b2f9]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::read_canonical_rpp_tables()+0x150) [0x7fa2afdffba0]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::RamaPrePro()+0x62) [0x7fa2afe00ec2]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::create_ramapp_instance()+0x4a) [0x7fa2afeb960a]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(std::_Function_handler<std::shared_ptr<core::scoring::RamaPrePro> (), std::_Bind<std::shared_ptr<core::scoring::RamaPrePro> (*())()> >::_M_invoke(std::_Any_data const&)+0x1d) [0x7fa2afed194d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::get_RamaPrePro() const+0xed) [0x7fa2afebce7d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergy::RamaPreProEnergy()+0xb6) [0x7fa2b1715226]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergyCreator::create_energy_method(core::scoring::methods::EnergyMethodOptions const&) const+0x3b) [0x7fa2b171536b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::energy_method(core::scoring::ScoreType const&, core::scoring::methods::EnergyMethodOptions const&) const+0x5b) [0x7fa2afebb37b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::set_weight(core::scoring::ScoreType const&, double const&)+0x375) [0x7fa2afe6f165]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_stream(std::istream&, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x7d3) [0x7fa2afe70043]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+0x93) [0x7fa2afe71783]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x5e) [0x7fa2afe718ae]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunctionFactory::create_score_function(utility::options::OptionCollection const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, utility::vector1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)+0xbad) [0x7fa2afea5e6d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(utility::options::OptionCollection const&, bool)+0x10fd) [0x7fa2afea83ed]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(bool)+0x28) [0x7fa2afea9b28]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(utility::options::OptionCollection const&, bool)+0x4c) [0x7fa2b849bddc]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(bool)+0x28) [0x7fa2b849d528]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::Relax_main(bool)+0x33) [0x7fa2b8478cb3]
+relax.mpi.linuxgccrelease(+0xb7da) [0x561d011317da]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fa2b536ab97]
+relax.mpi.linuxgccrelease(+0xb88a) [0x561d0113188a]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/chemical/residue_io.cc
+[LINE]: 144
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot find file '/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params or /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/chemical/residue_type_sets/fa_standard/residue_types//home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params'
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: relax.mpi.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: mpi (OpenMPI 2.1.1) 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.5.0"
+[STDLIB]: libstdc++ version 20191114
+[START_OPTIONS]
+ -in:file:s=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/BHET/1cex_BHET.pdb -in:file:extra_res_fa=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params -out:overwrite -out:nstruct=1 -out:suffix=_cartesian_calibrated -out:pdb_gz -run:constant_seed -score:weights=beta_nov16_cart.wts -packing:no_optH=false -packing:flip_HNQ -packing:use_input_sc -packing:ex1 -packing:ex2 -corrections:beta -relax:default_repeats=10 -relax:constrain_relax_to_start_coords -relax:coord_constrain_sidechains -relax:cartesian -relax:ramp_constraints=false
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7f0132058ba6]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7f013209b413]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x10f) [0x7f013205c11f]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x36) [0x7f013205bd46]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::read_topology_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::weak_ptr<core::chemical::AtomTypeSet const>, std::weak_ptr<core::chemical::ElementSet const>, std::weak_ptr<core::chemical::MMAtomTypeSet const>, std::weak_ptr<core::chemical::orbitals::OrbitalTypeSet const>)+0x5a8) [0x7f012a655ec8]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::init_restypes_from_commandline()+0x175) [0x7f012a5a2b75]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::GlobalResidueTypeSet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x214) [0x7f012a5a36e4]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::create_residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1f8) [0x7f012a565498]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(std::_Function_handler<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (), std::_Bind<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (core::chemical::ChemicalManager::*(core::chemical::ChemicalManager*, std::reference_wrapper<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const>))(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const> >::_M_invoke(std::_Any_data const&)+0x3e) [0x7f012a56846e]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x169) [0x7f012a5642f9]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::read_canonical_rpp_tables()+0x150) [0x7f012bac8ba0]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::RamaPrePro()+0x62) [0x7f012bac9ec2]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::create_ramapp_instance()+0x4a) [0x7f012bb8260a]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(std::_Function_handler<std::shared_ptr<core::scoring::RamaPrePro> (), std::_Bind<std::shared_ptr<core::scoring::RamaPrePro> (*())()> >::_M_invoke(std::_Any_data const&)+0x1d) [0x7f012bb9a94d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::get_RamaPrePro() const+0xed) [0x7f012bb85e7d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergy::RamaPreProEnergy()+0xb6) [0x7f012d3de226]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergyCreator::create_energy_method(core::scoring::methods::EnergyMethodOptions const&) const+0x3b) [0x7f012d3de36b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::energy_method(core::scoring::ScoreType const&, core::scoring::methods::EnergyMethodOptions const&) const+0x5b) [0x7f012bb8437b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::set_weight(core::scoring::ScoreType const&, double const&)+0x375) [0x7f012bb38165]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_stream(std::istream&, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x7d3) [0x7f012bb39043]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+0x93) [0x7f012bb3a783]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x5e) [0x7f012bb3a8ae]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunctionFactory::create_score_function(utility::options::OptionCollection const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, utility::vector1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)+0xbad) [0x7f012bb6ee6d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(utility::options::OptionCollection const&, bool)+0x10fd) [0x7f012bb713ed]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(bool)+0x28) [0x7f012bb72b28]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(utility::options::OptionCollection const&, bool)+0x4c) [0x7f0134164ddc]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(bool)+0x28) [0x7f0134166528]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::Relax_main(bool)+0x33) [0x7f0134141cb3]
+relax.mpi.linuxgccrelease(+0xb7da) [0x55f190df87da]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f0131033b97]
+relax.mpi.linuxgccrelease(+0xb88a) [0x55f190df888a]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/chemical/residue_io.cc
+[LINE]: 144
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot find file '/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params or /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/chemical/residue_type_sets/fa_standard/residue_types//home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params'
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2020.08+release.cb1caba
+[COMMIT_DATE]: 2020-02-21T14:46:08.581859
+[APPLICATION]: relax.mpi.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: mpi (OpenMPI 2.1.1) 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.5.0"
+[STDLIB]: libstdc++ version 20191114
+[START_OPTIONS]
+ -in:file:s=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/BHET/1cex_BHET.pdb -in:file:extra_res_fa=/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params -out:overwrite -out:nstruct=1 -out:suffix=_cartesian_calibrated -out:pdb_gz -run:constant_seed -score:weights=beta_nov16_cart.wts -packing:no_optH=false -packing:flip_HNQ -packing:use_input_sc -packing:ex1 -packing:ex2 -corrections:beta -relax:default_repeats=10 -relax:constrain_relax_to_start_coords -relax:coord_constrain_sidechains -relax:cartesian -relax:ramp_constraints=false
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7f86101c1ba6]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7f8610204413]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x10f) [0x7f86101c511f]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x36) [0x7f86101c4d46]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::read_topology_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::weak_ptr<core::chemical::AtomTypeSet const>, std::weak_ptr<core::chemical::ElementSet const>, std::weak_ptr<core::chemical::MMAtomTypeSet const>, std::weak_ptr<core::chemical::orbitals::OrbitalTypeSet const>)+0x5a8) [0x7f86087beec8]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::init_restypes_from_commandline()+0x175) [0x7f860870bb75]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::GlobalResidueTypeSet::GlobalResidueTypeSet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x214) [0x7f860870c6e4]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::create_residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1f8) [0x7f86086ce498]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(std::_Function_handler<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (), std::_Bind<std::shared_ptr<core::chemical::GlobalResidueTypeSet> (core::chemical::ChemicalManager::*(core::chemical::ChemicalManager*, std::reference_wrapper<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const>))(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const> >::_M_invoke(std::_Any_data const&)+0x3e) [0x7f86086d146e]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.2.so(core::chemical::ChemicalManager::residue_type_set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x169) [0x7f86086cd2f9]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::read_canonical_rpp_tables()+0x150) [0x7f8609c31ba0]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::RamaPrePro::RamaPrePro()+0x62) [0x7f8609c32ec2]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::create_ramapp_instance()+0x4a) [0x7f8609ceb60a]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(std::_Function_handler<std::shared_ptr<core::scoring::RamaPrePro> (), std::_Bind<std::shared_ptr<core::scoring::RamaPrePro> (*())()> >::_M_invoke(std::_Any_data const&)+0x1d) [0x7f8609d0394d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::get_RamaPrePro() const+0xed) [0x7f8609ceee7d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergy::RamaPreProEnergy()+0xb6) [0x7f860b547226]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.4.so(core::scoring::methods::RamaPreProEnergyCreator::create_energy_method(core::scoring::methods::EnergyMethodOptions const&) const+0x3b) [0x7f860b54736b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoringManager::energy_method(core::scoring::ScoreType const&, core::scoring::methods::EnergyMethodOptions const&) const+0x5b) [0x7f8609ced37b]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::set_weight(core::scoring::ScoreType const&, double const&)+0x375) [0x7f8609ca1165]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_stream(std::istream&, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x7d3) [0x7f8609ca2043]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::_add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+0x93) [0x7f8609ca3783]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunction::add_weights_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x5e) [0x7f8609ca38ae]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::ScoreFunctionFactory::create_score_function(utility::options::OptionCollection const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, utility::vector1<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)+0xbad) [0x7f8609cd7e6d]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(utility::options::OptionCollection const&, bool)+0x10fd) [0x7f8609cda3ed]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libcore.3.so(core::scoring::get_score_function(bool)+0x28) [0x7f8609cdbb28]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(utility::options::OptionCollection const&, bool)+0x4c) [0x7f86122cdddc]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::generate_relax_from_cmd(bool)+0x28) [0x7f86122cf528]
+/home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/source/build/src/release/linux/4.15/64/x86/gcc/7/mpi/libprotocols.4.so(protocols::relax::Relax_main(bool)+0x33) [0x7f86122aacb3]
+relax.mpi.linuxgccrelease(+0xb7da) [0x55940077c7da]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f860f19cb97]
+relax.mpi.linuxgccrelease(+0xb88a) [0x55940077c88a]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/chemical/residue_io.cc
+[LINE]: 144
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot find file '/home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params or /home/ubuntu/Downloads/rosetta_bin_linux_2020.08.61146_bundle/main/database/chemical/residue_type_sets/fa_standard/residue_types//home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/BHET.params'
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+

@@ -1,0 +1,7 @@
+-nstruct 1
+-relax:default_repeats 10
+-constant_seed
+-extra_res_fa /home/ubuntu/Thesis/RosettaDesign/small_molecule_interface_design/enzdes/input_files/experiments/1CEX/BHET/BHET.params
+
+#-out:path:pdb ./tutorial_output
+#-out:path:score ./expected_output

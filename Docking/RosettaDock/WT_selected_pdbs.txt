@@ -1,0 +1,10 @@
+output_WT/1cex_c_PET_0404.pdb
+output_WT/1cex_c_PET_0589.pdb
+output_WT/1cex_c_PET_0886.pdb
+output_WT/1cex_c_PET_0771.pdb
+output_WT/1cex_c_PET_0098.pdb
+output_WT/1cex_c_PET_0320.pdb
+output_WT/1cex_c_PET_0873.pdb
+output_WT/1cex_c_PET_0132.pdb
+output_WT/1cex_c_PET_0720.pdb
+output_WT/1cex_c_PET_0327.pdb

@@ -1,0 +1,2 @@
+req dG_separated value < -30.146112869447364
+output sortmin dG_separated

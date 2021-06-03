@@ -1,0 +1,5 @@
+req all_cst value < 340.95554100497094
+req SR_6_interf_E_1_2 value < -11.431992755104424
+req SR_6_dsasa_1_2 value < 0.16513878810329352
+req nlr_totrms value < 0.5972353053323494
+output sortmin total_score

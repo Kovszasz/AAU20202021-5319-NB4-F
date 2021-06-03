@@ -1,0 +1,10 @@
+output_T80D/1cex_PET_mid_c_D80_PET_0233.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0375.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0741.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0155.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0720.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0126.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0766.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0171.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0862.pdb
+output_T80D/1cex_PET_mid_c_D80_PET_0750.pdb

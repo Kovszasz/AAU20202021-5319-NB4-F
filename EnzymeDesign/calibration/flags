@@ -1,0 +1,17 @@
+-nstruct 1
+-relax:default_repeats 10
+-constant_seed
+-score:weights beta_nov16_cart.wts
+-ex1
+-ex2
+-flip_HNQ
+-no_optH false
+-use_input_sc
+-beta
+-overwrite
+-out:pdb
+-relax:cartesian
+-relax:constrain_relax_to_start_coords
+-relax:coord_constrain_sidechains
+-relax:ramp_constraints false
+-out:suffix _cartesian_calibrated

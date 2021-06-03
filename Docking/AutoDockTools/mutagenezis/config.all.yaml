@@ -1,0 +1,112 @@
+INPUT: {PDB: 1CEX}
+MUTAGENEZIS:
+- MUTANT: []
+- MUTANT: []
+- MUTANT:
+  - {aa: R, chain: A, pos: 82}
+- MUTANT:
+  - {aa: R, chain: A, pos: 82}
+  - {aa: I, chain: A, pos: 151}
+- MUTANT:
+  - {aa: R, chain: A, pos: 82}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: L, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: R, chain: A, pos: 82}
+  - {aa: L, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: R, chain: A, pos: 82}
+- MUTANT:
+  - {aa: L, chain: A, pos: 151}
+- MUTANT:
+  - {aa: I, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: R, chain: A, pos: 82}
+  - {aa: I, chain: A, pos: 151}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: R, chain: A, pos: 82}
+  - {aa: L, chain: A, pos: 151}
+- MUTANT:
+  - {aa: I, chain: A, pos: 151}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+- MUTANT:
+  - {aa: L, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: R, chain: A, pos: 82}
+  - {aa: L, chain: A, pos: 151}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: R, chain: A, pos: 82}
+  - {aa: I, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: R, chain: A, pos: 82}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: L, chain: A, pos: 151}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: I, chain: A, pos: 151}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: R, chain: A, pos: 82}
+  - {aa: I, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: R, chain: A, pos: 82}
+  - {aa: L, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: D, chain: A, pos: 80}
+  - {aa: I, chain: A, pos: 151}
+  - {aa: D, chain: A, pos: 18}
+- MUTANT:
+  - {aa: A, chain: A, pos: 120}
+- MUTANT:
+  - {aa: P, chain: A, pos: 45}
+- MUTANT:
+  - {aa: N, chain: A, pos: 21}
+- MUTANT:
+  - {aa: W, chain: A, pos: 85}
+- MUTANT:
+  - {aa: A, chain: A, pos: 182}
+- MUTANT:
+  - {aa: W, chain: A, pos: 85}
+  - {aa: A, chain: A, pos: 182}
+- MUTANT:
+  - {aa: C, chain: A, pos: 84}
+- MUTANT:
+  - {aa: C, chain: A, pos: 182}
+- MUTANT:
+  - {aa: C, chain: A, pos: 84}
+- MUTANT:
+  - {aa: C, chain: A, pos: 182}
+- MUTANT:
+  - {aa: N, chain: A, pos: 83}
+- MUTANT:
+  - {aa: A, chain: A, pos: 83}
+  - {aa: A, chain: A, pos: 115}
+- MUTANT:
+  - {aa: G, chain: A, pos: 83}
+- MUTANT:
+  - {aa: G, chain: A, pos: 81}
+  - {aa: G, chain: A, pos: 182}
+- MUTANT:
+  - {aa: F, chain: A, pos: 69}
