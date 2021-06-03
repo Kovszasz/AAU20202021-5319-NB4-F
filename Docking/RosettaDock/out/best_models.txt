@@ -1,5 +1,0 @@
-1cex_BHET_0066.pdb
-1cex_BHET_0012.pdb
-1cex_BHET_0031.pdb
-1cex_BHET_0071.pdb
-1cex_BHET_0062.pdb

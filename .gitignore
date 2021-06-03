@@ -21,6 +21,7 @@
 /Docking/AutoDockTools/docking/*.pse
 /Docking/AutoDockTools/docking/*.mc
 /Docking/AutoDockTools/docking/*.log
+Docking/RosettaDock/out/*
 /Docking/AutoDockTools/docking/__pycache__/*
 /Docking/RosettaDock/output_*
 /Docking/RosettaDock/*.sc
@@ -30,5 +31,3 @@
 /Docking/RosettaDock/*.txt
 /Docking/RosettaDock/*.png
 /EnzymeDesign/*.mat
-
-
